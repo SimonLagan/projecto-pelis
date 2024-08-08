@@ -1,4 +1,41 @@
-.body{
-    margin: 0;
-    padding: 0;
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1 rem = 10px*/
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1;
+    background: #E9F1FA;
+    background-image:url(/Imagenes/BACKGROUND.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  
+
+.galeria img{
+    margin: 5rem;
+    border: 5px solid #FE3A4A;
+    object-fit: cover;
+    height: 120rem;
+    width: 80rem;
+}
+
+.galeria button{
+    padding: 100px 200px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+.galeria button:hover{
+    background-color: #9545a0;
 }
