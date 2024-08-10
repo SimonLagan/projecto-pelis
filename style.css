@@ -8,60 +8,49 @@ html {
   box-sizing: inherit;
 }
 
-.hero {
-  background-image: url(/Imagenes/header.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 25rem;
-  text-align: center;
-  font-size: 25px;
-}
-
-.hero h1 {
-  color: #179bae;
-}
-
-@media (min-width: 768px) {
-  .hero {
-    height: 55rem;
-  }
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 1.6rem;
-  line-height: 1;
-  background: #e9f1fa;
+  background-image: url(/Imagenes/logo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  height: 80rem;
+}
+
+li {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: #173b45;
-  text-transform: uppercase;
+  color: white;
+  font-size: 1rem;
 }
 
-.galeria img {
-  margin: 5rem;
-  border: 5px solid #179bae;
-  object-fit: cover;
-  height: 120rem;
-  width: 80rem;
+a:hover {
+  color: orange;
 }
 
-.navegacion-principal {
-  padding: 2rem 0;
+/*Header*/
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+/*navbar*/
+.navbar {
+  width: 10rem;
+  height: 10rem;
+  max-width: 120px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 45px;
-}
-
-@media (min-width: 768px) {
-  .navegacion-principal {
-    justify-content: space-around;
-    flex-direction: row;
-  }
+  align-items: center center;
+  justify-content: space-between;
+  gap: 12rem;
 }
