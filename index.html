@@ -1,48 +1,333 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Peliculas</title>
     <link rel="stylesheet" href="/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Website Movies</title>
   </head>
   <body>
-    <header>
-      <div class="navbar">
-        <div class="logo">
-          <a href="#">Esta es una pagina para ver tus peliculas y series</a>
+    <script src="/java.js"></script>
+    <header class="header">
+      <div class="menu container">
+        <a href="#" class="logo">WatchTV</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="/Imagenes/menu.png" class="menu-icono" alt="menu" />
+        </label>
+        <nav class="nav-bar">
+          <ul>
+            <li>
+              <a href="#">Menu<br /></a>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV-shows</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="btn-1">Login</a>
+      </div>
+
+      <div class="header-content container">
+        <div class="header-1">
+          <img src="/Imagenes/logo.png" alt="" />
+          <a href="#" class="btn-2">Watch now</a>
         </div>
-        <ul class="links">
-          <li><a href="#">Movies</a></li>
-          <li><a href="#">TV-Shows</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a href="#" class="action_btn">Get started</a>
-        <div class="toggle_btn">
-          <i class="fa-solid fa-bars"></i>
+        <div class="header-2">
+          <h1>
+            The best <br />
+            movies
+          </h1>
+          <img src="/Imagenes/play.png" alt="" />
         </div>
       </div>
     </header>
 
-    <!--<div class="galeria">
-        <img src="/Imagenes/0.jpg" alt="pelicula 0" class="movie">
-        <img src="/Imagenes/1.jpg" alt="pelicula 1" class="movie">
-        <img src="/Imagenes/2.jpg" alt="pelicula 2" class="movie">
-        <img src="/Imagenes/3.jpg" alt="pelicula 3" class="movie">
-        <img src="/Imagenes/4.jpg" alt="pelicula 3" class="movie">
-    <div>   -->
+    <section class="movies container">
+      <h2>More Watched</h2>
+      <hr />
+      <div class="box-container-1">
+        <div class="box-1">
+          <div class="content">
+            <img src="/Imagenes/0.jpg" alt="" />
+            <h3>Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-1">
+          <div class="content">
+            <img src="/Imagenes/1.jpg" alt="" />
+            <h3>Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-1">
+          <div class="content">
+            <img src="/Imagenes/2.jpg" alt="" />
+            <h3>Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-1">
+          <div class="content">
+            <img src="/Imagenes/3.jpg" alt="" />
+            <h3>Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-1">
+          <div class="content">
+            <img src="/Imagenes/4.jpg" alt="" />
+            <h3>Movies</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="load-more" id="load-more-1">Load more</div>
+    </section>
+
+    <section class="movies container">
+      <h2>TV-Shows</h2>
+      <hr />
+      <div class="box-container-2">
+        <div class="box-2">
+          <div class="content">
+            <img src="/Imagenes/TV-SHOWS/00.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="content">
+            <img src="/Imagenes/TV-SHOWS/01.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="content">
+            <img src="/Imagenes/TV-SHOWS/02.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="content">
+            <img src="/Imagenes/TV-SHOWS/03.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-2">
+          <div class="content">
+            <img src="/Imagenes/TV-SHOWS/04.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="load-more" id="load-more-2">Load more</div>
+    </section>
+
+    <section class="movies container">
+      <h2>Anime</h2>
+      <hr />
+      <div class="box-container-3">
+        <div class="box-3">
+          <div class="content">
+            <img src="/Imagenes/ANIMES/0.jpg" alt="" />
+            <h3>Anime</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="content">
+            <img src="/Imagenes/ANIMES/1.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="content">
+            <img src="/Imagenes/ANIMES/2.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="content">
+            <img src="/Imagenes/ANIMES/3.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-3">
+          <div class="content">
+            <img src="/Imagenes/ANIMES/4.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="load-more" id="load-more-3">Load more</div>
+    </section>
+
+    <section class="movies container">
+      <h2>Movies realease</h2>
+      <hr />
+      <div class="box-container-4">
+        <div class="box-4">
+          <div class="content">
+            <img src="/Imagenes/MOVIES-RELEASE/0.jpg" alt="" />
+            <h3>Anime</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="content">
+            <img src="/Imagenes/MOVIES-RELEASE/1.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="content">
+            <img src="/Imagenes/MOVIES-RELEASE/2.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="content">
+            <img src="/Imagenes/MOVIES-RELEASE/3.jpg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="content">
+            <img src="/Imagenes/MOVIES-RELEASE/4.jpeg" alt="" />
+            <h3>TV-Shows</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis eius repudiandae explicabo commodi illum
+              quidem deserunt quos, officia harum exercitationem ad aperiam nisi
+              omnis quod inventore necessitatibus totam a!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="load-more" id="load-more-4">Load more</div>
+    </section>
+
+    <footer class="footer container">
+      <h3>WatchTV</h3>
+
+      <ul>
+        <li><a href="#">Start</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">TV-shows</a></li>
+        <li><a href="#">Anime</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
