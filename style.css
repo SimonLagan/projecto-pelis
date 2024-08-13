@@ -247,3 +247,80 @@ hr {
 .footer h3 {
   font-size: 4rem;
 }
+
+.footer a {
+  color: #e3651d;
+  font-size: 2rem;
+  margin-right: 2rem;
+  display: block;
+}
+
+.footer a:hover {
+  color: #ff204e;
+}
+
+@media (max-width: 9.9rem) {
+  .menu {
+    padding: 2rem;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .menu .nav-bar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #222831;
+    display: none;
+  }
+
+  .menu .nav-bar ul li {
+    width: 100%;
+  }
+
+  .btn-1 {
+    display: none;
+  }
+
+  #menu:checked ~ .nav-bar {
+    display: initial;
+  }
+
+  .header-content {
+    flex-direction: column;
+    padding: 18rem 3rem 3rem 3rem;
+  }
+
+  .header-1 {
+    width: 10rem;
+    align-items: center;
+  }
+
+  .header-2 {
+    width: 10rem;
+    align-items: center;
+  }
+
+  .movies {
+    padding: 3rem 10rem;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    padding: 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer ul {
+    margin-top: 1.5rem;
+    justify-content: center;
+  }
+}
+
+.copyright {
+  text-align: center;
+}
