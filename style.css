@@ -155,8 +155,8 @@ hr {
 .box-container-2,
 .box-container-3,
 .box-container-4 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  display: flex;
+  flex-direction: repeat(auto-fit, minmax(25rem, 2fr));
   gap: 5rem;
 }
 
@@ -323,4 +323,9 @@ hr {
 
 .copyright {
   text-align: center;
+}
+
+.content {
+  background-color: #ff204e;
+  padding: 1rem 1.5rem 3rem 1.5rem;
 }
