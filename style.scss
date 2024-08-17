@@ -148,14 +148,15 @@ body {
 
 h2 {
   font-size: 30px;
-  padding: 5px 50px;
+  text-align: center;
 }
 
 hr {
-  border: 1px solid #ff204e;
-  width: 47%;
-  margin-bottom: 15px;
-  margin-left: 50px;
+  width: 50%;
+  border-top: 4px solid #a502ee;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .box-container-1,
@@ -163,22 +164,11 @@ hr {
 .box-container-3,
 .box-container-4 {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
   justify-content: center;
   align-items: center;
   gap: 15px;
-  .box-1,
-  .box-2,
-  .box-3,
-  .box-4 {
-    border-radius: 0.5rem;
-    z-index: 1000;
-    display: none;
-
-    &:nth-child(-n + 5) {
-      display: inline-block;
-    }
-  }
 }
 
 .load-more {
@@ -190,6 +180,7 @@ hr {
   font-size: 1.6rem;
   cursor: pointer;
   align-self: flex-end;
+  text-align: center;
 
   &:hover {
     background-color: #e3651d;
@@ -199,12 +190,13 @@ hr {
 
 .content {
   border-radius: 15px;
-  background-color: #ff204e;
+  background-color: #992133;
   padding: 1rem 1.5rem 3rem 1.5rem;
+  display: flex;
   img {
     margin-bottom: 1.5rem;
     height: 400px;
-    width: 300px;
+    width: 250px;
     object-fit: cover;
   }
 
