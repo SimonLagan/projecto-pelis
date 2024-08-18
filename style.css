@@ -150,12 +150,11 @@ hr {
 .box-container-2,
 .box-container-3,
 .box-container-4 {
-  display: flex;
-  flex-wrap: wrap;
-  /*flex-direction: row;*/
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
+  width: 25%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
 }
 
 .load-more {
