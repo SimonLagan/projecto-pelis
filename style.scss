@@ -26,139 +26,7 @@ body {
   line-height: 2;
 }
 
-.container {
-  max-width: 120rem;
-  margin: 0 auto;
-}
-
-.header {
-  background-image: url(/Imagenes/bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 20rem;
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  .nav-bar {
-    ul {
-      li {
-        position: relative;
-        float: left;
-
-        a {
-          font-size: 2.2rem;
-          padding: 20px;
-          color: #fff;
-          display: block;
-
-          &:hover {
-            color: #e3651d;
-          }
-        }
-      }
-    }
-  }
-}
-
-.logo {
-  font-size: 4.5rem;
-  color: #fff;
-}
-
-#menu {
-  display: none;
-}
-
-.menu-icono {
-  width: 2.5rem;
-}
-
-.menu-label {
-  cursor: pointer;
-  display: none;
-}
-
-.header-content {
-  display: flex;
-  width: 120rem;
-
-  .header-1 {
-    display: flex;
-    flex-direction: column;
-    width: 60rem;
-    align-self: flex-end;
-
-    img {
-      width: 20rem;
-    }
-  }
-
-  .header-2 {
-    width: 60rem;
-    margin-top: 8rem;
-    text-align: end;
-
-    h1 {
-      color: #b2b2b2;
-      font-size: 8rem;
-      line-height: 8rem;
-    }
-
-    img {
-      width: 7rem;
-    }
-  }
-}
-
-.btn-1,
-.btn-2 {
-  display: inline-block;
-  background-color: #ff204e;
-  color: #fff;
-}
-
-.btn-1 {
-  padding: 0.7rem 2rem;
-  font-size: 2rem;
-}
-
-.btn-2 {
-  width: 11rem;
-  padding: 0.7rem 2rem;
-  font-size: 1.2rem;
-  margin-top: 3rem;
-}
-
-.movies {
-  padding: 5rem 0 0 0;
-  display: flex;
-  flex-direction: column;
-}
-
-h2 {
-  font-size: 30px;
-  text-align: center;
-}
-
-hr {
-  width: 50%;
-  border-top: 4px solid #a502ee;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
-
+//Section for movies
 .box-container-1,
 .box-container-2,
 .box-container-3,
@@ -213,29 +81,7 @@ hr {
   object-fit: cover;
 }
 
-/*.box-container-2,
-.box-container-3,
-.box-container-4*/
-/*position: relative;
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  justify-content: center;*/
-
-// .box-1 .content {
-//   position: relative;
-//   height: 425px;
-//   border-radius: 10px;
-//   object-fit: cover;
-// }
-// .box-1 img {
-//   position: fixed;
-//   width: 50%;
-//   height: 50%;
-//   border-radius: 10px;
-// }
-
+//button below the section movies
 .load-more {
   margin-top: 4rem;
   padding: 1rem 2.5rem;
@@ -253,45 +99,34 @@ hr {
   }
 }
 
-.content {
-  border-radius: 15px;
-  background-color: #992133;
-  padding: 1rem 1.5rem 3rem 1.5rem;
-  display: flex;
-
-  img {
-    margin-bottom: 1.5rem;
-    height: 400px;
-    width: 250px;
-    object-fit: cover;
-  }
-
-  h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  color: #ffc470;
-  font-size: 2rem;
+//footer
+.copyright {
+  text-align: center;
+  font-size: 3rem;
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10rem 0;
-  margin-top: 10rem;
-  border-top: 1px solid #ff204e;
+  width: 50%;
+  border-top: 5px solid #a502ee;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
   align-items: center;
 
   h3 {
-    font-size: 4rem;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
   }
 
   a {
     color: #e3651d;
-    font-size: 2rem;
+    font-size: 4rem;
     margin-right: 2rem;
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 
     &:hover {
       color: #ff204e;
@@ -299,66 +134,25 @@ hr {
   }
 }
 
-@media (max-width: 99rem) {
-  .menu {
-    padding: 2rem;
-
-    label {
-      display: initial;
-    }
-
-    .nav-bar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      right: 0;
-      background-color: #222831;
-      display: none;
-
-      ul {
-        li {
-          width: 100%;
-        }
-      }
-    }
-  }
-
-  .btn-1 {
-    display: none;
-  }
-
-  #menu:checked ~ .nav-bar {
-    display: initial;
-  }
-
-  .header-content {
-    flex-direction: column;
-    padding: 18rem 3rem 3rem 3rem;
-
-    .header-1,
-    .header-2 {
-      width: 10rem;
-      align-items: center;
-    }
-  }
-
-  .movies {
-    padding: 3rem 10rem;
-  }
-
-  .footer {
-    margin-top: 1rem;
-    padding: 3rem;
-    flex-direction: column;
-    text-align: center;
-
-    ul {
-      margin-top: 1.5rem;
-      justify-content: center;
-    }
-  }
+//hr space in the section
+hr {
+  width: 50%;
+  border-top: 5px solid #a502ee;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
-.copyright {
+//title movies
+h2 {
+  font-size: 30px;
   text-align: center;
+}
+
+//content movies and modify background
+.content {
+  border-radius: 15px;
+  background-color: #ae1d2c;
+  padding: 1rem 1.5rem 3rem 1.5rem;
+  display: flex;
 }
