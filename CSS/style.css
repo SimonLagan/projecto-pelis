@@ -158,15 +158,43 @@ h2 {
   padding: 1rem 1.5rem 3rem 1.5rem;
   display: flex;
 }
+.content .imagen {
+  padding: 10px;
+  background-color: #222831;
+}
+.content .informacion {
+  padding: 5px;
+  background-color: purple;
+  width: 100%;
+  height: 100%;
+}
 
 .enunciado_video {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: wheat;
-  width: 50%;
+  width: 100%;
   height: 20px;
+}
+.enunciado_video .ano {
+  background-color: aqua;
+  width: 30%;
+  height: 100%;
+}
+.enunciado_video .espanol {
+  background-color: black;
+  width: 30%;
+  height: 100%;
+}
+.enunciado_video .ingles {
+  background-color: blue;
+  width: 30%;
+  height: 100%;
 }
 
 .enunciado_video2 {
   background-color: yellow;
-  width: 50%;
+  width: 100%;
   height: 20px;
 }/*# sourceMappingURL=style.css.map */
