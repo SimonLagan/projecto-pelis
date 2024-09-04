@@ -1,44 +1,79 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Peliculas</title>
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/video.css" />
+    <title>Video Player</title>
   </head>
   <body>
     <script src="/java.js"></script>
-    <div class="hero"></div>
-
-    <header>
-      <h1 class="nombre-sitio">Movies<span> Fate </span></h1>
-    </header>
-
-    <div class="contenedor-navegacion">
-      <nav class="nav-principal">
-        <a href="/index.html">Home</a>
-        <a href="/movies.html">Movies</a>
-        <a href="#">TV-Shows</a>
-        <a href="#">Anime</a>
-      </nav>
+    <div class="wrapper">
+      <div class="player">
+        <video
+          loop
+          id="video"
+          poster="/Imagenes/images/poster.jpg"
+          src="/Video/test.mp4"
+        ></video>
+        <div class="playerOverlay">
+          <h2 class="playerTitle">Música para programar</h2>
+          <div class="playerActions">
+            <button
+              class="button"
+              id="backward"
+              aria-label="Retroceder 10 segundos"
+              title="Retroceder 10 segundos"
+            ></button>
+            <button
+              class="button"
+              id="play"
+              aria-label="Reproducir"
+              title="Reproducir"
+            ></button>
+            <button
+              class="button"
+              id="pause"
+              aria-label="Pausar"
+              title="Pausar"
+              hidden
+            ></button>
+            <button
+              class="button"
+              id="forward"
+              aria-label="Avanzar 10 segundos"
+              title="Avanzar 10 segundos"
+            ></button>
+          </div>
+          <div class="playerProgress">
+            <input
+              id="progress"
+              type="range"
+              min="0"
+              value="0"
+              max="100"
+              step="1"
+              class="progress"
+            />
+          </div>
+          <div class="volume">
+            <button
+              class="button"
+              id="volumeOn"
+              aria-label="Activar volumen"
+              title="Activar volumen"
+              hidden
+            ></button>
+            <button
+              class="button"
+              id="volumeOff"
+              aria-label="Silenciar"
+              title="Silenciar"
+            ></button>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div>
-      <h2>Thor</h2>
-      <video src="/Video/test.mp4"></video>
-    </div>
-
-    <footer class="footer container">
-      <h3>Movies Fate</h3>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </footer>
-
-    <p class="copyright">
-      Todos los derechos reservados, S.A Guatemala Partners
-    </p>
   </body>
 </html>
