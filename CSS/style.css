@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 html {
   box-sizing: border-box;
@@ -45,7 +44,9 @@ body {
   justify-content: space-between;
   height: 100%;
 }
+
 .box-1 .content {
+  border-radius: 15px;
   flex-grow: 1; /* Permite que el contenido crezca para ocupar todo el espacio disponible */
   display: flex;
   flex-direction: column;
@@ -112,6 +113,7 @@ body {
 
 .box-1 .content img {
   width: 100%;
+  height: 100%;
   height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -119,6 +121,7 @@ body {
 
 .box-2 .content img {
   width: 100%;
+  height: 100%;
   height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -126,6 +129,7 @@ body {
 
 .box-3 .content img {
   width: 100%;
+  height: 100%;
   height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -133,6 +137,7 @@ body {
 
 .box-4 .content img {
   width: 100%;
+  height: 100%;
   height: 270px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -202,7 +207,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 15px;
+  border-radius: 0 0 15px 15px;
   background-color: #a3a8b7;
   padding: 1rem 1.5rem 3rem 1.5rem;
   display: flex;
@@ -309,10 +314,15 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: #0b61b4;
   height: 100%;
-  padding: 10px 0; /* Espaciado interno del título */
-  width: 100%; /* Asegura que ocupe todo el ancho */
+  padding: 10px;
+  width: 100%;
+  font-size: 10px;
+  font-weight: bolder;
+  letter-spacing: 3px;
+  border-radius: 0 0 15px 15px;
 }
 
 .nombre-sitio {
@@ -361,8 +371,4 @@ h2 {
   font-size: 15px;
   display: flex;
   justify-content: center;
-}
-
-.video1 {
-  width: 500px;
 }/*# sourceMappingURL=style.css.map */
