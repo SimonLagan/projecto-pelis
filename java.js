@@ -60,20 +60,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log("Progreso actualizado", $progress.value);
     }
   });
-
-  // Funciones de control de volumen
-  $volumeUp.addEventListener("click", () => {
-    $video.volume = Math.min($video.volume + 0.1, 1); // Aumenta el volumen en 0.1, máximo 1
-    console.log("Volumen aumentado", $video.volume);
-  });
-
-  $volumeDown.addEventListener("click", () => {
-    $video.volume = Math.max($video.volume - 0.1, 0); // Disminuye el volumen en 0.1, mínimo 0
-    console.log("Volumen disminuido", $video.volume);
-  });
-
-  $volumeMute.addEventListener("click", () => {
-    $video.volume = 0; // Silencia el video
-    console.log("Volumen silenciado");
-  });
 });
